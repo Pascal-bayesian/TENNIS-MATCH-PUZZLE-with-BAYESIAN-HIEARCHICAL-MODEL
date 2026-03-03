@@ -1,0 +1,441 @@
+// ~->[DNET-1]->~
+
+// File created by BerckerP using Netica 7.01 on Mar 03, 2026 at 11:35:07 UTC.
+
+bnet THE_TENNIS_MATCH_PUZZLE_1 {
+AutoCompile = TRUE;
+autoupdate = TRUE;
+comment = "\FF\FE\n\
+	\00\n\
+	\00M\00A\00T\00T\00 \00P\00A\00R\00K\00E\00R\00:\00 \00S\00t\00a\00n\00d\00-\00u\00p\00 \00M\00a\
+	\00t\00h\00e\00m\00a\00t\00i\00c\00i\00a\00n\00\n\
+	\00W\00e\00b\00s\00i\00t\00e\00:\00 \00h\00t\00t\00p\00:\00/\00/\00s\00t\00a\00n\00d\00u\00p\00m\
+	\00a\00t\00h\00s\00.\00c\00o\00m\00/\00\n\
+	\00\n\
+	\00H\00e\00r\00e\00 \00i\00s\00 \00t\00h\00e\00 \00f\00u\00l\00l\00 \00T\00e\00n\00n\00i\00s\00 \
+	\00C\00h\00a\00l\00l\00e\00n\00g\00e\00 \00p\00u\00z\00z\00l\00e\00:\00\n\
+	\00\n\
+	\00A\00l\00i\00c\00e\00,\00 \00a\00n\00 \00a\00m\00a\00t\00e\00u\00r\00 \00t\00e\00n\00n\00i\00s\
+	\00 \00p\00l\00a\00y\00e\00r\00,\00 \00h\00a\00s\00 \00j\00u\00s\00t\00 \00j\00o\00i\00n\00e\00d\
+	\00 \00a\00 \00t\00e\00n\00n\00i\00s\00 \00c\00l\00u\00b\00.\00\n\
+	\00 \00A\00s\00 \00a\00 \00w\00e\00l\00c\00o\00m\00e\00,\00 \00t\00h\00e\00 \00h\00e\00a\00d\00 \
+	\00c\00o\00a\00c\00h\00 \00J\00e\00n\00n\00y\00 \00d\00e\00c\00i\00d\00e\00d\00 \00t\00o\00 \00g\
+	\00i\00v\00e\00 \00h\00e\00r\00 \00a\00 \00c\00h\00a\00l\00l\00e\00n\00g\00e\00 \00\n\
+	\00-\00 \00A\00l\00i\00c\00e\00 \00w\00i\00l\00l\00 \00p\00l\00a\00y\00 \003\00 \00g\00a\00m\00e\
+	\00s\00 \00a\00g\00a\00i\00n\00s\00t\00 \00J\00e\00n\00n\00y\00 \00a\00n\00d\00 \00a\00n\00o\00t\
+	\00h\00e\00r\00 \00c\00l\00u\00b\00 \00m\00e\00m\00b\00e\00r\00 \00\n\
+	\00C\00a\00r\00l\00a\00 \00a\00l\00t\00e\00r\00n\00a\00t\00i\00v\00e\00l\00y\00,\00 \00a\00n\00d\
+	\00 \00s\00h\00e\00 \00n\00e\00e\00d\00s\00 \00t\00o\00 \00w\00i\00n\00 \00t\00w\00o\00 \00c\00o\
+	\00n\00s\00e\00c\00u\00t\00i\00v\00e\00 \00g\00a\00m\00e\00s\00\n\
+	\00 \00t\00o\00 \00w\00i\00n\00 \00t\00h\00e\00 \00c\00h\00a\00l\00l\00e\00n\00g\00e\00.\00 \00T\
+	\00h\00e\00 \00c\00o\00a\00c\00h\00 \00a\00l\00l\00o\00w\00e\00d\00 \00A\00l\00i\00c\00e\00 \00t\
+	\00o\00 \00p\00i\00c\00k\00 \00t\00h\00e\00 \00o\00r\00d\00e\00r\00\n\
+	\00 \00i\00n\00 \00w\00h\00i\00c\00h\00 \00s\00h\00e\00 \00w\00o\00u\00l\00d\00 \00l\00i\00k\00e\
+	\00 \00t\00o\00 \00p\00l\00a\00y\00 \00t\00h\00o\00s\00e\00 \00g\00a\00m\00e\00s\00 \00-\00 \00\n\
+	\00e\00i\00t\00h\00e\00r\00 \00J\00e\00n\00n\00y\00-\00C\00a\00r\00l\00a\00-\00J\00e\00n\00n\00y\
+	\00,\00 \00o\00r\00 \00C\00a\00r\00l\00a\00-\00J\00e\00n\00n\00y\00-\00C\00a\00r\00l\00a\00.\00\n\
+	\00 \00E\00v\00e\00r\00y\00o\00n\00e\00 \00k\00n\00o\00w\00s\00 \00t\00h\00a\00t\00 \00t\00h\00e\
+	\00 \00c\00o\00a\00c\00h\00 \00i\00s\00 \00t\00h\00e\00 \00b\00e\00s\00t\00 \00p\00l\00a\00y\00e\
+	\00r\00 \00i\00n\00 \00t\00h\00e\00 \00c\00l\00u\00b\00.\00 \00\n\
+	\00\n\
+	\00W\00h\00i\00c\00h\00 \00o\00r\00d\00e\00r\00 \00s\00h\00o\00u\00l\00d\00 \00A\00l\00i\00c\00e\
+	\00 \00c\00h\00o\00o\00s\00e\00?\00\n\
+	\00\n\
+	\00-\00-\00-\00-\00-\00-\00-\00-\00-\00-\00-\00-\00\n\
+	\00\n\
+	\00M\00a\00t\00t\00 \00P\00a\00r\00k\00e\00r\00 \00n\00o\00t\00e\00s\00 \00t\00h\00a\00t\00 \00t\
+	\00h\00i\00s\00 \00c\00a\00n\00 \00b\00e\00 \00s\00o\00l\00v\00e\00d\00 \00\n\
+	\00i\00n\00 \00t\00w\00o\00 \00w\00a\00y\00s\00 \00-\00 \00a\00 \00t\00e\00c\00h\00n\00i\00c\00a\
+	\00l\00 \00f\00o\00r\00m\00a\00l\00 \00a\00p\00p\00r\00a\00o\00c\00h\00 \00a\00n\00d\00 \00\n\
+	\00i\00n\00 \00a\00n\00 \00i\00n\00t\00u\00i\00t\00i\00v\00e\00 \00w\00a\00y\00.\00 \00 \00\n\
+	\00\n\
+	\00B\00u\00t\00 \00h\00o\00w\00 \00d\00o\00 \00y\00o\00u\00 \00d\00o\00 \00y\00o\00u\00 \00b\00u\
+	\00i\00l\00d\00 \00u\00p\00 \00a\00n\00 \00i\00n\00t\00u\00i\00t\00i\00o\00n\00 \00a\00b\00o\00u\
+	\00t\00 \00i\00t\00?\00 \00 \00\n\
+	\00\n\
+	\00\n\
+	\00I\00 \00s\00u\00d\00d\00e\00n\00l\00y\00 \00s\00a\00w\00 \00t\00h\00e\00 \00p\00o\00i\00n\00t\
+	\00 \00o\00f\00 \00i\00t\00 \00i\00n\00 \00t\00h\00e\00 \00c\00o\00u\00r\00s\00e\00 \00\n\
+	\00o\00f\00 \00w\00r\00i\00t\00i\00n\00g\00 \00a\00 \00s\00i\00m\00p\00l\00e\00 \00e\00q\00u\00a\
+	\00t\00i\00o\00n\00 \00w\00h\00i\00l\00e\00 \00b\00u\00i\00l\00d\00i\00n\00g\00 \00a\00 \00s\00i\
+	\00m\00u\00l\00a\00t\00i\00o\00n\00\F9\00\n\
+	\00o\00f\00 \00w\00h\00a\00t\00 \00c\00o\00u\00l\00d\00 \00h\00a\00p\00p\00e\00n\00\n\
+	\00\n\
+	\00A\00s\00 \00s\00o\00o\00n\00 \00a\00s\00 \00y\00o\00u\00 \00w\00r\00i\00t\00e\00 \00t\00h\00e\
+	\00 \00e\00q\00u\00a\00t\00i\00o\00n\00 \00f\00o\00r\00 \00a\00l\00i\00c\00e\00 \00\n\
+	\00w\00i\00n\00n\00i\00n\00g\00 \00t\00w\00o\00 \00i\00n\00 \00a\00 \00r\00o\00w\00 \00y\00o\00u\
+	\00 \00a\00r\00e\00 \00b\00o\00u\00n\00d\00 \00t\00o\00 \00r\00e\00a\00l\00i\00z\00e\00 \00t\00h\
+	\00a\00t\00 \00\n\
+	\00s\00h\00e\00 \00a\00b\00s\00o\00l\00u\00t\00e\00l\00y\00 \00n\00e\00e\00d\00s\00 \00t\00o\00 \
+	\00w\00i\00n\00 \00t\00h\00e\00 \00m\00i\00d\00d\00l\00e\00 \00g\00a\00m\00e\00 \00\n\
+	\00a\00n\00d\00 \00t\00h\00a\00t\00 \00m\00e\00a\00n\00s\00 \00t\00a\00h\00t\00 \00s\00h\00e\00 \
+	\00n\00e\00e\00d\00s\00 \00t\00o\00 \00m\00a\00x\00i\00m\00i\00z\00e\00 \00h\00e\00r\00 \00c\00h\
+	\00a\00n\00c\00e\00s\00 \00o\00f\00 \00\n\
+	\00w\00i\00n\00n\00i\00n\00g\00 \00t\00h\00a\00t\00 \00g\00a\00m\00e\00 \00b\00y\00 \00p\00l\00a\
+	\00y\00i\00n\00g\00t\00h\00e\00 \00w\00e\00a\00k\00e\00r\00 \00p\00l\00a\00y\00e\00r\00,\00 \00C\
+	\00a\00r\00l\00a\00\n\
+	\00\n\
+	\00W\00e\00 \00d\00o\00n\00'\00t\00 \00k\00n\00o\00w\00 \00w\00h\00a\00t\00 \00h\00e\00r\00 \00s\
+	\00t\00r\00e\00n\00g\00t\00h\00 \00i\00s\00 \00b\00u\00t\00 \00w\00e\00 \00k\00n\00o\00w\00 \00t\
+	\00h\00a\00t\00 \00r\00e\00l\00a\00t\00i\00v\00e\00\n\
+	\00t\00o\00 \00C\00a\00r\00l\00a\00,\00 \00J\00e\00n\00n\00y\00 \00i\00s\00 \00b\00e\00t\00t\00e\
+	\00r\00 \00t\00h\00a\00n\00 \00C\00a\00r\00l\00a\00 \00a\00n\00d\00 \00p\00r\00o\00b\00a\00b\00l\
+	\00y\00 \00b\00e\00t\00t\00e\00r\00\n\
+	\00t\00h\00a\00n\00 \00A\00l\00i\00c\00e\00\n\
+	\00\n\
+	\00B\00u\00t\00 \00h\00o\00w\00 \00d\00o\00e\00s\00 \00C\00a\00r\00l\00a\00 \00c\00o\00m\00a\00p\
+	\00r\00e\00 \00t\00o\00 \00A\00l\00i\00c\00e\00?\00 \00 \00\n\
+	\00\n\
+	\00T\00h\00i\00s\00 \00i\00s\00 \00a\00 \00l\00e\00s\00s\00o\00n\00 \00i\00n\00 \00g\00i\00v\00i\
+	\00n\00g\00 \00r\00e\00a\00s\00o\00n\00a\00b\00l\00e\00 \00p\00r\00i\00o\00r\00s\00\n\
+	\00\n\
+	\00A\00n\00d\00 \00i\00n\00 \00t\00h\00i\00s\00 \00c\00a\00s\00e\00 \00w\00e\00 \00n\00e\00e\00d\
+	\00 \00o\00n\00l\00y\00 \00s\00a\00y\00 \00t\00h\00a\00t\00 \00t\00h\00e\00 \00p\00r\00i\00o\00r\
+	\00\n\
+	\00w\00e\00 \00h\00a\00v\00e\00 \00i\00s\00 \00t\00h\00a\00t\00 \00j\00e\00n\00n\00y\00 \00i\00s\
+	\00 \00b\00e\00t\00t\00e\00r\00 \00t\00h\00a\00n\00 \00C\00a\00r\00l\00a\00\n\
+	\00\n\
+	\00s\00i\00n\00c\00e\00 \00J\00e\00n\00n\00y\00 \00i\00s\00 \00t\00h\00e\00 \00b\00e\00s\00t\00 \
+	\00i\00n\00 \00t\00h\00e\00 \00c\00l\00u\00b\00,\00 \00s\00h\00e\00 \00i\00s\00 \00b\00e\00t\00t\
+	\00e\00r\00 \00t\00h\00a\00n\00 \00c\00a\00r\00l\00a\00\n\
+	\00b\00u\00t\00 \00h\00o\00w\00 \00s\00h\00o\00u\00l\00d\00 \00w\00e\00 \00c\00o\00m\00p\00a\00r\
+	\00e\00 \00j\00e\00n\00n\00y\00 \00a\00n\00d\00 \00a\00l\00i\00c\00e\00?\00 \00\n\
+	\00\n\
+	\00\n\
+	\00";
+whenchanged = 1772449133;
+
+visual V1 {
+	defdispform = BELIEFBARS;
+	nodelabeling = NAMETITLE;
+	NodeMaxNumEntries = 50;
+	nodefont = font {shape= "Arial"; size= 12;};
+	linkfont = font {shape= "Arial"; size= 9;};
+	ShowLinkStrengths = 1;
+	windowposn = (122, 19, 1775, 881);
+	CommentShowing = TRUE;
+	CommentWindowPosn = (1379, 177, 1986, 824);
+	resolution = 72;
+	drawingbounds = (2280, 1030);
+	showpagebreaks = FALSE;
+	usegrid = TRUE;
+	gridspace = (6, 6);
+	NodeSet Node {BuiltIn = 1; Color = 0x00e1e1e1;};
+	NodeSet Nature {BuiltIn = 1; Color = 0x00f8eed2;};
+	NodeSet Deterministic {BuiltIn = 1; Color = 0x006fb7ff;};
+	NodeSet Finding {BuiltIn = 1; Color = 0x00a8ffa8;};
+	NodeSet Constant {BuiltIn = 1; Color = 0x00ffffff;};
+	NodeSet ConstantValue {BuiltIn = 1; Color = 0x00ffffb4;};
+	NodeSet Utility {BuiltIn = 1; Color = 0x00ffbdbd;};
+	NodeSet Decision {BuiltIn = 1; Color = 0x00dee8ff;};
+	NodeSet Documentation {BuiltIn = 1; Color = 0x00f0fafa;};
+	NodeSet Title {BuiltIn = 1; Color = 0x00ffffff;};
+	NodeSet teal {Color = 0x00a8ffff;};
+	NodeSet text {Color = 0x00ffb3d9;};
+	NodeSet title2 {Color = 0x00ffb591;};
+	NodeSet text2 {Color = 0x00ffff9f;};
+	NodeSet rules {Color = 0x009fe0ff;};
+	NodeSet EQ {Color = 0x00dbdeb8;};
+	NodeSet purple {Color = 0x00d0bbf7;};
+	NodeSet yellow {Color = 0x00ffff9b;};
+	NodeSet red {Color = 0x00ff5e5e;};
+	PrinterSetting A {
+		margins = (1270, 1270, 1270, 1270);
+		};
+	};
+
+node teal {
+	discrete = FALSE;
+	kind = CONSTANT;
+	parents = ();
+	whenchanged = 1763894829;
+	visual V1 {
+		center = (1476, 36);
+		font = font {shape= "Arial"; size= 14;};
+		ShowValSep = " = ";
+		height = 1;
+		};
+	};
+
+node text1 {
+	discrete = FALSE;
+	kind = CONSTANT;
+	parents = ();
+	title = "JANE STEET PUZZLE VIA MATT PARKER";
+	whenchanged = 1772392847;
+	visual V1 {
+		center = (1182, 18);
+		font = font {shape= "Arial"; size= 14;};
+		ShowValSep = " = ";
+		height = 4;
+		};
+	};
+
+node title {
+	discrete = FALSE;
+	kind = CONSTANT;
+	parents = ();
+	title = "THE TENNIS MATCH -\nJenny - Carla - Jenny";
+	whenchanged = 1772436351;
+	visual V1 {
+		center = (408, 204);
+		font = font {shape= "Arial"; size= 18;};
+		ShowValSep = " = ";
+		height = 9;
+		};
+	};
+
+node rules {
+	discrete = FALSE;
+	kind = CONSTANT;
+	parents = ();
+	title = "rules";
+	whenchanged = 1760775214;
+	visual V1 {
+		center = (1596, 36);
+		font = font {shape= "Arial"; size= 14;};
+		ShowValSep = " = ";
+		height = 3;
+		};
+	};
+
+node rules3 {
+	discrete = FALSE;
+	kind = CONSTANT;
+	parents = ();
+	title = "Powered with Netica";
+	whenchanged = 1761970411;
+	visual V1 {
+		center = (816, 24);
+		font = font {shape= "Arial"; size= 14;};
+		ShowValSep = " = ";
+		height = 2;
+		};
+	};
+
+node M1 {
+	discrete = TRUE;
+	states = (jenny, alice);
+	kind = NATURE;
+	chance = CHANCE;
+	parents = ();
+	probs = 
+		// jenny        alice        
+		  (0.6,         0.4);
+	equation = "P (M1 | ) = M1 == jenny ? Jenny_skill :  1 - Jenny_skill";
+	title = "Who wins?";
+	comment = "first try \n\nP (M1 | ) = M1 == jenny ? .60 : .40 ";
+	whenchanged = 1772449133;
+	belief = (0.6, 0.4);
+	visual V1 {
+		center = (204, 306);
+		height = 6;
+		};
+	};
+
+node M2 {
+	discrete = TRUE;
+	states = (carla, alice);
+	kind = NATURE;
+	parents = ();
+	title = "Who wins?";
+	whenchanged = 1772445249;
+	belief = (0.5, 0.5);
+	visual V1 {
+		center = (408, 306);
+		height = 5;
+		};
+	};
+
+node M3 {
+	discrete = TRUE;
+	states = (jenny, alice);
+	kind = NATURE;
+	chance = CHANCE;
+	parents = ();
+	probs = 
+		// jenny        alice        
+		  (0.6,         0.4);
+	equation = "P (M3 | ) = M3 == jenny ? Jenny_skill : 1 - Jenny_skill";
+	title = "Who wins?";
+	comment = "\n first try\n\nP (M3 | ) =  M3 == jenny ? .60 : .40\n";
+	whenchanged = 1772449133;
+	belief = (0.6, 0.4);
+	visual V1 {
+		center = (612, 306);
+		height = 8;
+		};
+	};
+
+node two {
+	discrete = TRUE;
+	states = (true, false);
+	kind = NATURE;
+	chance = DETERMIN;
+	parents = (M1, M2, M3);
+	functable = 
+		                    // M1    M2    M3    
+		  (false,           // jenny carla jenny 
+		   false,           // jenny carla alice 
+		   false,           // jenny alice jenny 
+		   true,            // jenny alice alice 
+		   false,           // alice carla jenny 
+		   false,           // alice carla alice 
+		   true,            // alice alice jenny 
+		   true);           // alice alice alice ;
+	equation = "P (two | M1, M2, M3) = \n\n(M1 == alice && M2 == alice) ||\n(M2 == alice && M3 == alice)  ? 1 : \
+		0 ";
+	title = "alice wins 2 in a row";
+	whenchanged = 1772449133;
+	belief = (0.32, 0.68);
+	visual V1 {
+		center = (408, 480);
+		height = 7;
+		};
+	};
+
+node M5 {
+	discrete = TRUE;
+	states = (jenny, alice);
+	kind = NATURE;
+	chance = CHANCE;
+	parents = ();
+	probs = 
+		// jenny        alice        
+		  (0.6,         0.4);
+	equation = "P (M5 | ) = M5 == jenny ? Jenny_skill :  1 - Jenny_skill";
+	title = "Who wins?";
+	whenchanged = 1772449133;
+	belief = (0.6, 0.4);
+	visual V1 {
+		center = (1116, 312);
+		height = 12;
+		};
+	};
+
+node M4 {
+	discrete = TRUE;
+	states = (carla, alice);
+	kind = NATURE;
+	parents = ();
+	title = "Who wins?";
+	whenchanged = 1772445901;
+	belief = (0.5, 0.5);
+	visual V1 {
+		center = (924, 312);
+		height = 13;
+		};
+	};
+
+node M6 {
+	discrete = TRUE;
+	states = (carla, alice);
+	kind = NATURE;
+	parents = ();
+	title = "Who wins?";
+	whenchanged = 1772445918;
+	belief = (0.5, 0.5);
+	visual V1 {
+		center = (1308, 312);
+		height = 17;
+		};
+	};
+
+node two1 {
+	discrete = TRUE;
+	states = (true, false);
+	kind = NATURE;
+	chance = DETERMIN;
+	parents = (M4, M5, M6);
+	functable = 
+		                    // M4    M5    M6    
+		  (false,           // carla jenny carla 
+		   false,           // carla jenny alice 
+		   false,           // carla alice carla 
+		   true,            // carla alice alice 
+		   false,           // alice jenny carla 
+		   false,           // alice jenny alice 
+		   true,            // alice alice carla 
+		   true);           // alice alice alice ;
+	equation = "P (two1 | M4, M5, M6) = \n\nM5 == alice && (M4 == alice || M6 == alice) ";
+	title = "alice wins 2 in a row";
+	whenchanged = 1772449133;
+	belief = (0.3, 0.7);
+	visual V1 {
+		center = (1116, 492);
+		height = 11;
+		};
+	};
+
+node equation {
+	discrete = FALSE;
+	kind = CONSTANT;
+	parents = ();
+	title = "P (two | M1, M2, M3) = \n\n\
+		(M1 == alice && M2 == alice) ||\n\
+		(M2 == alice && M3 == alice)  ? 1 : 0\n\n\
+		P (M1 | ) = M1 == jenny ? Jenny_skill :  1 - Jenny_skill ";
+	whenchanged = 1772446693;
+	visual V1 {
+		center = (414, 606);
+		font = font {shape= "Arial"; size= 14;};
+		ShowValSep = " = ";
+		height = 10;
+		};
+	};
+
+node equation1 {
+	discrete = FALSE;
+	kind = CONSTANT;
+	parents = ();
+	title = "P (two1 | M4, M5, M6) = \n\n\
+		M5 == alice && (M4 == alice || M6 == alice) \n\n\
+		P (M5 | ) = M5 == jenny ? Jenny_skill :  1 - Jenny_skill";
+	whenchanged = 1772446977;
+	visual V1 {
+		center = (1116, 600);
+		font = font {shape= "Arial"; size= 14;};
+		ShowValSep = " = ";
+		height = 14;
+		};
+	};
+
+node title1 {
+	discrete = FALSE;
+	kind = CONSTANT;
+	parents = ();
+	title = "THE TENNIS MATCH -\nCarla - Jenny - Carla";
+	whenchanged = 1772436334;
+	visual V1 {
+		center = (1116, 210);
+		font = font {shape= "Arial"; size= 18;};
+		ShowValSep = " = ";
+		height = 15;
+		};
+	};
+
+node Jenny_skill {
+	discrete = FALSE;
+	kind = CONSTANT;
+	chance = DETERMIN;
+	parents = ();
+	whenchanged = 1772449127;
+	value = 0.6;
+	visual V1 {
+		center = (1116, 150);
+		font = font {shape= "Arial"; size= 16;};
+		ShowValSep = " = ";
+		height = 16;
+		};
+	};
+NodeSet teal {Nodes = (teal);};
+NodeSet text {Nodes = (text1);};
+NodeSet title2 {Nodes = (title, title1);};
+NodeSet text2 {Nodes = ();};
+NodeSet rules {Nodes = (rules, rules3);};
+NodeSet EQ {Nodes = (equation, equation1);};
+NodeSet purple {Nodes = ();};
+NodeSet yellow {Nodes = ();};
+NodeSet red {Nodes = ();};
+ElimOrder = (M1, M2, M3, two, M5, M4, M6, two1);
+};

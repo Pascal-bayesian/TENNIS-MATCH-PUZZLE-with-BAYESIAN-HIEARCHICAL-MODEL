@@ -26,3 +26,4 @@ This repository illustrates how qualitative assumptions can be converted into co
 
 ---
 
+https://www.norsys.com/netica.html
